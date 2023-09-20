@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-bilf
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-777-0089-tenant/ci10t-777-0089-app/devfile-sample-bilf@sha256:95dd2a8ef1afd1d1d1e40a820db25e4635c067e058af58871ca22c80344324b2
+        name: my-nodejs
+        resources: {}
+status: {}
